@@ -1,0 +1,59 @@
+{% from 'macros/helpers.html' import sprite %}
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ title_index }}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/app.css"> {% include "shared/app-icons.html" %} {% block head %}{% endblock %}
+</head>
+
+<body id="top" name="top">
+    <!-- header -->
+    {% include 'layouts/header.html' %}
+    <!-- ###header -->
+    <!-- content -->
+    <div id="wrap_content">
+        {% block content %}{% endblock %}
+    </div>
+    <!-- ###content -->
+    <!-- footer -->
+    {% include 'layouts/footer.html' %}
+    <!-- ###footer -->
+    {% block javascript %}
+    <!-- jQuery -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="javascripts/app.js"></script>
+    {% endblock %}
+    <div id="str">
+        <a class="str" href="">
+        страницы <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+    </a>
+        <ul>
+            <li><a href="/">Главная(+)</a></li>
+            <li><a href="stranica_video.html">Страница видео(+)</a></li>
+            <li><a href="dobavit_tehniku.html">Добавить технику(+)</a></li>
+            <li><a href="zadat_vopros.html">Задать вопрос(+)</a></li>
+            <li><a href="zakazat_mastera.html">Заказать мастера(+)</a></li>
+            <li><a href="zadat_vopros_i_zapchasti_odonakovye.html">Задать вопрос и запчасти одинаковые(+)</a></li>
+            <li><a href="katalog_video_otzyvov.html">Каталог видео-отзывов(+)</a></li>
+            <li><a href="katalog_vybora_otzyva.html">каталог выбора отзыва(+)</a></li>
+            <li><a href="katalog_info_otzyva.html">каталог инфо-отзывов(+)</a></li>
+            <li><a href="katalog_neispravnostej.html">каталог неисправностей(+)</a></li>
+            <li><a href="katalog_tehniki.html">каталог техники(+)</a></li>
+            <li><a href="kontacty.html">контакты(+)</a></li>
+            <li><a href="info_otzyv.html">страница инфо-отзыва(+)</a></li>
+            <li><a href="statya_neispravnosti.html">страница статьи неисправности(+)</a></li>
+            <li><a href="tehnica.html">страница техники(+)</a></li>
+            <li><a href="uznat_nalichie.html">узнать наличие(+)</a></li>
+            <li><a href="forma_napisaniya_video_otzyvy.html">форма написания видео-отзывы(+)</a></li>
+            <li><a href="forma_napisaniya_info_otzyva.html">форма написания инфо-отзыва(+)</a></li>
+            <li><a href="ceny.html">цены(+)</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="personal_account.html">Personal account</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

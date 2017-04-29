@@ -1,0 +1,37 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_str_zadat_vopros_i_zapchasti_odonakovye }}{% endblock %} {% block content %}
+<!-- breadcrumbs and h1 -->
+{% include 'layouts/breadcrumbs_and_h1.html' %}
+<!-- ###breadcrumbs and h1 -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 close_me_content">
+                <section class="zadat_vopros_i_zapchasti_odonakovye">
+                    <div class="first_text">
+                        <p class="text_p">Здесь Вы можете задать любые вопросы, касательно диагностики и ремонта стиральных машин. Если же Ваш вопрос, по поводу продажи или подбора запасных частей, задавайте его в разделе - <a href="#">продажа запчасей для стиральных машин.</a> Все вопросы не по теме, будут удалены - без ответа на них. Благодарю за понимание.</p>
+                    </div>
+                    
+                    <!-- question -->
+                    {% include 'layouts/question.html' %}
+                    <!-- ###question -->
+                    <!-- nav -->
+                    {% include 'layouts/nav.html' %}
+                    <!-- ###nav -->
+                    <!-- opredelite neispravnost -->
+                    {% include 'layouts/opredelite_neispravnost_samostoyatelno.html' %}
+                    <!-- ###opredelite neispravnost -->
+                    <!-- video otzyvy -->
+                    {% include 'layouts/video-otzyvy.html' %}
+                    <!-- ###video otzyvy -->
+                    <!-- info otzyvy -->
+                    {% include 'layouts/info-otzyvy.html' %}
+                    <!-- ###info otzyvy -->
+                </section>
+            </div>
+            <div class="col-md-4 col-lg-4 close_me">
+                {% include 'layouts/sidebar.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'layouts/footer-block.html' %} {% endblock %}

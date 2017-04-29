@@ -1,0 +1,163 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_index }}{% endblock %} {% block content %}
+<section id="one" class="fade_me">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-5 col-md-6 col-lg-6 video">
+                <div>
+                    <iframe class="embed-responsive-item" width="100%" height="315" src="https://www.youtube.com/embed/63L1sfElbzI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-7 col-md-6 col-lg-6 left_block">
+                <h1>РЕМОНТ СТИРАЛЬНОЙ МАШИНЫ НА ДОМУ<br>ОТ ЧАСТНОГО МАСТЕРА, В СЕВАСТОПОЛЕ</h1>
+                <div class="block_text_one">
+                    <p><i class="fa fa-check-square-o fa-2x" aria-hidden="true"></i> Бесплатный приезд и диагностика</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Запчасти по оптовым ценам</p>
+                    <p><i class="fa fa-check-square-o" aria-hidden="true"></i> Гарантия до 12 месяцев</p>
+                </div>
+                <p class="center"><a class="btn_water" data-toggle="modal" data-target="#myModal" href="#">ВЫЗВАТЬ
+                    МАСТЕРА НА ДОМ<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+                <span class="allert">* Приезд мастера на дом не оплачивается только в том случае, если мастер проводит ремонт техники на дому у клиента, в иных случаях вызов мастера и диагностика оплачивается по стандартному тарифу в прайс-листе.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_samsung_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_Indesit_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/lg.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_Gorenje_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_zanussi_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_Whirpool_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_beko_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_Bosch_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_Candy_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_electrolux_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix">
+                    <a href="#"><img src="images/brand_ardo_300_105.png"></a>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-2 col-md-1 col-lg-1 logo_brand">
+                <div class="fix fix_last">
+                    <a class="last_brand" href="#">Все <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="advantages" class="fade_me">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3 col-lg-3 preim bounce_me one">
+                <a href="/">
+                    <span class="first"><i class="fa fa_blue fa-handshake-o" aria-hidden="true"></i></span>
+                    <span class="last_i"><i class="fa fa_blue fa-long-arrow-right" aria-hidden="true"></i></span>
+                    <h4>87% позвонивших</h4>
+                    <p>Вызывают
+                        <br> мастера на дом</p>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 preim bounce_me two">
+                <a href="/">
+                    <span class="first"><i class="fa fa_blue fa-rub" aria-hidden="true"></i></span>
+                    <span class="last_i"><i class="fa fa_blue fa-long-arrow-right" aria-hidden="true"></i></span>
+                    <h4>Менее 1500 Рублей</h4>
+                    <p>СРЕДНЯЯ
+                        <br> СТОИМОСТЬ РАБОТЫ</p>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 preim bounce_me three">
+                <a href="/">
+                    <span class="first"><i class="fa fa_blue fa-youtube-play" aria-hidden="true"></i></span>
+                    <span class="last_i"><i class="fa fa_blue fa-long-arrow-right" aria-hidden="true"></i></span>
+                    <h4>Более 250 видео-отзывов</h4>
+                    <p>БЛАГОДАРНЫХ
+                        <br> КЛИЕНТОВ В СЕВАСТОПОЛЕ</p>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 preim bounce_me four">
+                <a href="/">
+                    <span class="first"><i class="fa fa_blue fa-wrench" aria-hidden="true"></i></span>
+                    <span class="last_i"><i class="fa fa_blue fa-long-arrow-right" aria-hidden="true"></i></span>
+                    <h4>Менее 40 минут</h4>
+                    <p>СРЕДНЕЕ
+                        <br>ВРЕМЯ ПРИЕЗДА
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 close_me_content fade_me">
+                <!-- opredelite neispravnost -->
+                {% include 'layouts/opredelite_neispravnost_samostoyatelno-full.html' %}
+                <!-- ###opredelite neispravnost -->
+                <!-- tseny na remont -->
+                {% include 'layouts/tseny_na_remont-full.html' %}
+                <!-- ###tseny na remont -->
+                <!-- prodazha by -->
+                {% include 'layouts/prodazha-by-full.html' %}
+                <!-- ###prodazha by -->
+                <!-- prodazha zapchastej -->
+                {% include 'layouts/prodazha-zapchastej-full.html' %}
+                <!-- ###prodazha zapchastej -->
+                <!-- smi o nas -->
+                {% include 'layouts/smi_o_nas.html' %}
+                <!-- ###smi o nas -->
+                <!-- video otzyvy -->
+                {% include 'layouts/video-otzyvy-full-index.html' %}
+                <!-- ###video otzyvy -->
+                <!-- info otzyvy -->
+                {% include 'layouts/info-otzyvy-full-index.html' %}
+                <!-- ###info otzyvy -->
+                <!-- not found alert -->
+                {% include 'layouts/not-found-alert.html' %}
+                <!-- ###not found alert -->
+            </div>
+            <div class="col-md-4 col-lg-4 close_me fade_me">
+                {% include 'layouts/sidebar.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'layouts/footer-block.html' %} {% endblock %}

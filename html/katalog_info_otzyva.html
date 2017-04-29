@@ -1,0 +1,86 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_str_katalog_info_otzyva }}{% endblock %} {% block content %}
+<!-- breadcrumbs and h1 -->
+{% include 'layouts/breadcrumbs_and_h1.html' %}
+<!-- ###breadcrumbs and h1 -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 close_me_content">
+                <!-- katalog_info_otzyva -->
+                <section class="katalog_info_otzyva info_otzyv m_bottom">
+                    <!--  -->
+                    {# Каждые два отзыва в блоке row чтоб не сьезжало при разности текстов #}
+                    <!--  -->
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv fade_me">
+                            <div class="img">
+                                <img src="images/angeline.jpg" alt="">
+                            </div>
+                            <span class="my_name_is">Артур Иванович</span>
+                            <p class="text_p">Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка и слив работает,а когда приходит время отжима обычно это длится 13мин, иногда...</p>
+                            <a class="butn_brd_orange" href="#">читать весь <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv fade_me">
+                            <div class="img">
+                                <img src="images/angeline.jpg" alt="">
+                            </div>
+                            <span class="my_name_is">Артур Иванович</span>
+                            <p class="text_p">Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка и слив работает,а когда приходит время отжима обычно это длится 13мин, иногда...</p>
+                            <a class="butn_brd_orange" href="#">читать весь <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv fade_me">
+                            <div class="img">
+                                <img src="images/angeline.jpg" alt="">
+                            </div>
+                            <span class="my_name_is">Артур Иванович</span>
+                            <p class="text_p">Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка и слив работает,а когда приходит время отжима обычно это длится 13мин, иногда...</p>
+                            <a class="butn_brd_orange" href="#">читать весь <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv fade_me">
+                            <div class="img">
+                                <img src="images/angeline.jpg" alt="">
+                            </div>
+                            <span class="my_name_is">Артур Иванович</span>
+                            <p class="text_p">Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка и слив работает,а когда приходит время отжима обычно это длится 13мин, иногда...</p>
+                            <a class="butn_brd_orange" href="#">читать весь <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv fade_me">
+                            <div class="img">
+                                <img src="images/angeline.jpg" alt="">
+                            </div>
+                            <span class="my_name_is">Артур Иванович</span>
+                            <p class="text_p">Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка и слив работает,а когда приходит время отжима обычно это длится 13мин, иногда...</p>
+                            <a class="butn_brd_orange" href="#">читать весь <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv fade_me">
+                            <div class="img">
+                                <img src="images/angeline.jpg" alt="">
+                            </div>
+                            <span class="my_name_is">Артур Иванович</span>
+                            <p class="text_p">Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка и слив работает,а когда приходит время отжима обычно это длится 13мин, иногда...</p>
+                            <a class="butn_brd_orange" href="#">читать весь <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ###katalog_info_otzyva -->
+                <!-- nav -->
+                {% include 'layouts/nav.html' %}
+                <!-- ###nav -->
+                <!-- video otzyvy -->
+                {% include 'layouts/video-otzyvy.html' %}
+                <!-- ###video otzyvy -->
+                <!-- prodazha by -->
+                {% include 'layouts/prodazha-by.html' %}
+                <!-- ###prodazha by -->
+            </div>
+            <div class="col-md-4 col-lg-4 close_me">
+                {% include 'layouts/sidebar.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'layouts/footer-block.html' %} {% endblock %}

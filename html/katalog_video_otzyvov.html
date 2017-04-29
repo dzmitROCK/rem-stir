@@ -1,0 +1,67 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_str_katalog_video_otzyvov }}{% endblock %} {% block content %}
+<!-- breadcrumbs and h1 -->
+{% include 'layouts/breadcrumbs_and_h1.html' %}
+<!-- ###breadcrumbs and h1 -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 close_me_content">
+                <!-- katalog_info_otzyva -->
+                <section class="katalog_info_otzyva video_otz">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv img_player fade_me">
+                            <a href="#">
+                                <img class="img-responsive" src="https://api.fnkr.net/testimg/350x200/333/FFF/?text=video+play">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv img_player fade_me">
+                            <a href="#">
+                                <img class="img-responsive" src="https://api.fnkr.net/testimg/350x200/333/FFF/?text=video+play">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv img_player fade_me">
+                            <a href="#">
+                                <img class="img-responsive" src="https://api.fnkr.net/testimg/350x200/333/FFF/?text=video+play">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv img_player fade_me">
+                            <a href="#">
+                                <img class="img-responsive" src="https://api.fnkr.net/testimg/350x200/333/FFF/?text=video+play">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv img_player fade_me">
+                            <a href="#">
+                                <img class="img-responsive" src="https://api.fnkr.net/testimg/350x200/333/FFF/?text=video+play">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 otzyv img_player fade_me">
+                            <a href="#">
+                                <img class="img-responsive" src="https://api.fnkr.net/testimg/350x200/333/FFF/?text=video+play">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ###katalog_info_otzyva -->
+                <!-- nav -->
+                {% include 'layouts/nav.html' %}
+                <!-- ###nav -->
+                <!-- info otzyvy -->
+                {% include 'layouts/info-otzyvy.html' %}
+                <!-- ###info otzyvy -->
+                <!-- prodazha by -->
+                {% include 'layouts/prodazha-by.html' %}
+                <!-- ###prodazha by -->
+            </div>
+            <div class="col-md-4 col-lg-4 close_me">
+                {% include 'layouts/sidebar.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'layouts/footer-block.html' %} {% endblock %}

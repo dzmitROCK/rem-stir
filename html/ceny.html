@@ -1,0 +1,83 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_str_ceny }}{% endblock %} {% block content %}
+<!-- breadcrumbs and h1 -->
+{% include 'layouts/breadcrumbs_and_h1.html' %}
+<!-- ###breadcrumbs and h1 -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 close_me_content">
+                <div class="allert_mb">
+                    <!-- allert vozmozhno -->
+                    {% include 'layouts/alert_vozmozhno.html' %}
+                    <!-- ###allert vozmozhno -->
+                </div>
+                <p class="text_p">Точная стоимость ремонта стиральной машины зависит от ее модели и вида неисправности. Мастеру необходимо выполнить диагностику, прежде чем назвать цену. Но примерные ценовые диапазоны можно обозначить заранее: Точная стоимость ремонта стиральной машины зависит от ее модели и вида неисправности. Мастеру необходимо выполнить диагностику, прежде чем назвать цену. Но примерные ценовые диапазоны можно обозначить заранее.
+                </p>
+                <p class="text_p">Точная стоимость ремонта стиральной машины зависит от ее модели и вида неисправности. Мастеру необходимо выполнить диагностику, прежде чем назвать цену. Но примерные ценовые диапазоны можно обозначить заранее:</p>
+                <div class="ceny_block m_bottom">
+                    <div class="table-responsive ttt">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                    <td class="name">Замена ремня</td>
+                                    <td class="cena orange_col">от 1200 руб.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- alert_table -->
+                    {% include 'layouts/alert_table.html' %}
+                    <!-- ###alert_table -->
+                </div>
+                <!-- not found alert -->
+                {% include 'layouts/not-found-alert.html' %}
+                <!-- ###not found alert -->
+                <!-- prodazha by -->
+                {% include 'layouts/prodazha-by.html' %}
+                <!-- ###prodazha by -->
+                <!-- video otzyvy -->
+                {% include 'layouts/video-otzyvy.html' %}
+                <!-- ###video otzyvy -->
+                <!-- info otzyvy -->
+                {% include 'layouts/info-otzyvy.html' %}
+                <!-- ###info otzyvy -->
+            </div>
+            <div class="col-md-4 col-lg-4 close_me">
+                {% include 'layouts/sidebar.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'layouts/footer-block.html' %} {% endblock %}

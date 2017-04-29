@@ -1,0 +1,48 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_str_video }}{% endblock %} {% block content %}
+<!-- breadcrumbs and h1 -->
+{% include 'layouts/breadcrumbs_and_h1.html' %}
+<!-- ###breadcrumbs and h1 -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 close_me_content">
+                <!-- video stranitsa -->
+                <section class="video_article">
+                    <div class="first_video fade_me">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/hwNdF6xsieQ" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="row fade_me">
+                        <div class="col-sm-6 col-md-6 col-lg-6 last_video img_player">
+                            <a href="#">
+                                <img class="img-responsive" src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 last_video img_player">
+                            <a href="#">
+                               <img class="img-responsive" src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- ###video stranitsa -->
+                <!-- opredelite neispravnost -->
+                {% include 'layouts/opredelite_neispravnost_samostoyatelno.html' %}
+                <!-- ###opredelite neispravnost -->
+                <!-- info otzyvy -->
+                {% include 'layouts/info-otzyvy.html' %}
+                <!-- ###info otzyvy -->
+                <!-- prodazha by -->
+                {% include 'layouts/prodazha-by.html' %}
+                <!-- ###prodazha by -->
+            </div>
+            <div class="col-md-4 col-lg-4 close_me">
+                {% include 'layouts/sidebar.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'layouts/footer-block.html' %} {% endblock %}

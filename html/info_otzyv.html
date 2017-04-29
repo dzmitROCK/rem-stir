@@ -1,0 +1,95 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_str_info_otzyv }}{% endblock %} {% block content %}
+<!-- breadcrumbs and h1 -->
+{% include 'layouts/breadcrumbs_and_h1.html' %}
+<!-- ###breadcrumbs and h1 -->
+<div id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-8 close_me_content">
+                <!-- stranica_info_otzyva -->
+                <section class="stranica_info_otzyva clearfix">
+                    <div class="first_otz clearfix">
+                        <div class="block_otz">
+                            <div class="row">
+                                <div class="col-sm-3 col-md-3 col-lg-3">
+                                    <div class="img_block">
+                                        <img class="img-responsive" src="http://rs42.pbsrc.com/albums/e321/godesshunter/boating%20boobs/378999_467600759959066_1976055228_n.jpg~320x480">
+                                    </div>
+                                </div>
+                                <div class="col-sm-9 col-md-9 col-lg-9 fade_me">
+                                    <div class="first_line clearfix">
+                                        <p class="name">Артур Иванович</p>
+                                        <p class="time">14.03.2017</p>
+                                    </div>
+                                    <div class="cont_otz">
+                                        <p>Здравствуйте!у меня вот такая проблема. У меня стиральная машина не отжимает,а стирка и слив работает,а когда приходит время отжима обычно это длится 13мин,икогда оно доходит до 10ти мин она останавливается,тоесть барабан крутит,но не отжимает и так стоит часами.
+                                        </p>
+                                        <p>
+                                            Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка и слив работает,а когда приходит время отжима обычно это длится 13мин,икогда оно доходит до 10ти мин она останавливается,тоесть барабан крутит,но не отжимает и так стоит часами. Написал отзыв за благодарность от добра. Вот.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 fade_me m_bottom">
+                            <div class="last_otz_nav">
+                                <div class="block_otz">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-3 col-lg-3">
+                                            <div class="img_block">
+                                                <img class="img-responsive" src="http://www.taaz.com/images/R600H600W/2DC6EBEF847684D86232B5AA17034D9A.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                            <div class="cont_otz">
+                                                <div class="name">Артур Иванович</div>
+                                                <p>Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка...</p>
+                                                <a class="btn_white" href="#">читать отзыв <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 fade_me m_bottom">
+                            <div class="last_otz_nav">
+                                <div class="block_otz">
+                                    <div class="row">
+                                        <div class="col-sm-3 col-md-3 col-lg-3">
+                                            <div class="img_block">
+                                                <img class="img-responsive" src="http://sc02.alicdn.com/kf/HTB1P_vHLpXXXXbgXXXXq6xXFXXXh.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                                            <div class="cont_otz">
+                                                <div class="name">Артур Иванович</div>
+                                                <p>Здравствуйте!у меня вот такая проблема.у меня стиральная машина не отжимает,а стирка...</p>
+                                                <a class="btn_white" href="#">читать отзыв <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- ###stranica_info_otzyva -->
+                <!-- opredelite neispravnost -->
+                {% include 'layouts/opredelite_neispravnost_samostoyatelno.html' %}
+                <!-- ###opredelite neispravnost -->
+                <!-- video otzyvy -->
+                {% include 'layouts/video-otzyvy.html' %}
+                <!-- ###video otzyvy -->
+                <!-- prodazha by -->
+                {% include 'layouts/prodazha-by.html' %}
+                <!-- ###prodazha by -->
+            </div>
+            <div class="col-md-4 col-lg-4 close_me">
+                {% include 'layouts/sidebar.html' %}
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'layouts/footer-block.html' %} {% endblock %}

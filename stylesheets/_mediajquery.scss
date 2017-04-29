@@ -1,0 +1,468 @@
+@media (max-width: $screen-lg) {
+
+    .header_personal_account .first_block_header .name_coins .name {
+        font-size: 15px;
+    }
+    .very_top_line nav ul li:first-child a {
+        padding: 8px 8px 9px 0;
+    }
+    .very_top_line nav ul li {
+        text-align: center;
+    }
+    .very_top_line nav ul li a {
+        padding: 8px 8px;
+        font-size: 12px;
+    }
+    footer .year_map .map a {
+        margin-left: 10px;
+    }
+    footer .vk {
+        float: none;
+        display: inline-block;
+        margin-left: 25%;
+    }
+    footer .master_btn {
+        float: right;
+    }
+    #one .left_block p i {
+        float: none;
+    }
+    .header .vkontakte,
+    .header .work_time,
+    .header .work_time {
+        display: none;
+    }
+    #one {
+        padding-top: 50px;
+    }
+    #one .left_block h1 {
+        font-size: 18px;
+    }
+    #nine .contact_block {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    footer .navigate_footer {
+        float: left;
+    }
+    footer .vk {
+        margin-bottom: 30px;
+    }
+    footer .navigate_footer ul li {
+        margin-right: 13px;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: $screen-md) {
+    .header_personal_account .first_block_header .name_coins {
+        margin-left: 5px;
+    }
+    .header_personal_account .first_block_header .name_coins .name {
+        font-size: 12px;
+            line-height: 20px;
+    }
+    .header_personal_account .first_block_header .name_ava_coins .ava .brd_ava a {
+        line-height: 40px;
+    }
+    .header_personal_account .first_block_header .name_ava_coins .ava {
+        width: 40px;
+    height: 40px;
+    }
+    .d_non_link {
+        display: none;
+    }
+    footer .copyryght {
+        margin: 0;
+    }
+    .very_top_line nav ul li:first-child a {
+        padding: 7px 10px 10px 0;
+    }
+    .very_top_line nav ul li a {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+    #one {
+        min-height: 50vh;
+    }
+    .header .top_line .contact_block .btn {
+        margin-left: 20px;
+    }
+    #one {
+        padding-top: 100px;
+    }
+    footer .master_btn {
+        &:after {
+            content: '';
+            clear: both;
+        }
+    }
+    footer .navigate_footer {
+        &:before {
+            content: '';
+            clear: both;
+        }
+    }
+    footer .vk {
+        float: none;
+        display: inline-block;
+        margin-left: 20%;
+    }
+    .otzyv_article .last_otz .block_otz h3 {
+        font-size: 22px;
+    }
+    .logo_brand {
+        margin-top: 10px;
+        .fix {
+            margin: 10px;
+        }
+    }
+    .video {
+        iframe {
+            height: 330px;
+        }
+    }
+    #find_japan {
+        .one {
+            display: none;
+        }
+    }
+    .dnon {
+        .gemor {
+            padding-top: 50px;
+        }
+    }
+    .nav_res {
+        display: none;
+    }
+    .close_me {
+        display: none;
+    }
+}
+
+@media (max-width: $screen-sm-min) {
+    .head_mod_dnon {
+        display: none;
+    }
+    .login_page .top_login .full_block .brd_rs {
+        margin-bottom: 40px;
+    }
+    .login_page .top_login .full_block .title {
+        margin-bottom: 40px;
+    }
+    .login_page .top_login .full_block .action .flex_container {
+        width: auto;
+        margin-bottom: 40px;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    #one .left_block h1 {
+        margin-top: 20px;
+    }
+    #top_btn {
+        bottom: 70px;
+    }
+    footer .master_btn {
+        margin-left: 55px;
+    }
+    footer .vk {
+        display: none;
+    }
+    .bott_line {
+        display: none;
+    }
+    footer .navigate_footer {
+        display: none;
+    }
+    .allertino .btn_allert {
+        margin-top: 0;
+        justify-content: flex-start;
+        a {
+            margin: 0;
+        }
+    }
+    #one .left_block h1 {
+        text-align: left;
+        font-size: 15px;
+    }
+    #one .left_block p i {
+        float: none;
+        font-size: 18px;
+    }
+    #one {
+        .left_block {
+            p {
+                text-align: left;
+                font-size: 18px;
+            }
+        }
+        .video {
+            display: none;
+        }
+    }
+    #buttons_phone {
+        display: block;
+    }
+    #find_japan .two .btn_water {
+        font-size: 10px;
+    }
+    #one {
+        padding-top: 300px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    #myModal .fix #ajaxform .form_input .form_text {
+        width: 100%;
+    }
+    #myModal .fix #ajaxform .form_input input {
+        width: 100%;
+    }
+    #nine .contact_block {
+        text-align: left;
+        padding-left: 45px;
+        .telephone {
+            margin-bottom: 10px;
+        }
+        .btn {
+            margin-left: 0;
+        }
+    }
+    #nine {
+        padding-bottom: 100px;
+    }
+    #nine .map {
+        display: none;
+    }
+    #nine .two ul {
+        text-align: left;
+        padding-left: 45px;
+    }
+    #buttons_phone {
+        display: block;
+    }
+    #six {
+        display: none;
+    }
+    #seven {
+        margin-top: 50px;
+    }
+    .nav_res {
+        display: block;
+    }
+    .header .top_line .contact_block {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header .dnon_header {
+        display: none;
+    }
+    .header {
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        background: #00709e;
+        min-height: auto;
+        z-index: 1000;
+    }
+    #one {
+        padding-top: 70px;
+    }
+    .very_top_line {
+        display: none;
+    }
+    #one .left_block .btn_water {
+        margin: 0 auto;
+        font-size: 13px;
+        padding: 10px 15px;
+        line-height: 15px;
+        i {
+            font-size: 15px;
+        }
+    }
+    #bread {
+        padding-top: 80px;
+    }
+    .event .no_active .btn_white {
+        margin-left: 10px;
+        float: left;
+    }
+}
+
+@media (max-width: $screen-xs-min) {
+    .rating {
+        h2 {
+            color: #000000;
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 30px;
+            text-align: center;
+        }
+        .left_rating {
+            .rating_block {
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    li {
+                        margin-bottom: 3px;
+                        padding: 10px;
+                        line-height: 15px;
+                        background-color: #fafafa;
+                        display: flex;
+                        justify-content: space-between;
+                        line-height: 30px;
+                        font-weight: bold;
+                        color: #000;
+                        .number {
+                            flex: 1;
+                            margin-left: 10px;
+                        }
+                        .avatar {
+                            flex: 1;
+                        }
+                        .name {
+                            flex: 6;
+                        }
+                        .coins {
+                            flex: 1;
+                        }
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .login_page .top_login .full_block .brd_rs {}
+    .login_page .top_login .full_block .brd_rs .flex_container_login {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        height: 300px;
+    }
+    .login_page .top_login .full_block .action .flex_container {
+        flex-direction: column;
+    }
+    .event .no_active .btn_white {
+        margin-left: 33px;
+    }
+    #one {
+        background-color: #fff;
+        background-image: url(../images/first.jpg);
+    }
+    footer .master_btn {
+        float: left;
+    }
+    .footer_block .btn_ful_or {
+        font-size: 15px;
+        padding: 10px;
+    }
+    .event .no_active .fa-star {
+        margin-right: 10px;
+    }
+    .event .no_active .text {
+        float: none;
+        margin-top: 0;
+    }
+    .event .no_active .btn_white {
+        float: none;
+    }
+    footer .copyryght,
+    .fillials {
+        margin-left: 0;
+    }
+    .bott_line {
+        margin-left: 60px;
+    }
+    footer .navigate_footer {
+        margin-left: 50px;
+    }
+    .logo_brand .fix {
+        margin: 10px 0;
+    }
+    #one .left_block {
+        .allert {
+            display: none;
+        }
+    }
+    #one .left_block p i {
+        float: none;
+    }
+    #one .left_block p {
+        text-align: left;
+    }
+    .fillials {
+        ul {
+            column-count: 4;
+        }
+    }
+    #contact {
+        .map {
+            width: 100%;
+            position: relative;
+            .block_d {
+                position: relative;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -20px;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 20px 20px 0;
+                    border-color: transparent $actcol transparent transparent;
+                }
+                h1 {
+                    color: #ffffff;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 0;
+                    margin-left: 50px;
+                }
+                border-radius: 10px 10px 0 10px;
+                width: 280px;
+                z-index: 2;
+                position: absolute;
+                top: 100px;
+                left: 50%;
+                margin-left: -140px;
+                background: $actcol;
+                .fix_p {
+                    color: #fff;
+                    position: relative;
+                    padding: 20px;
+                    img {
+                        margin-right: -52px;
+                        position: absolute;
+                        right: 95%;
+                        top: 20px;
+                    }
+                    .block_adress_tel {
+                        margin-left: 45px;
+                        display: flex;
+                        .logotype {
+                            background: $primecol;
+                            float: none;
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                        i:first-child {
+                            margin-bottom: 10px;
+                        }
+                        i {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

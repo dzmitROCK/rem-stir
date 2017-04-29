@@ -1,0 +1,68 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_str_kontacty }}{% endblock %} {% block content %}
+<div id="contact">
+    <div class="map">
+        <div class="block_map">
+    <!-- это инициализация апи яндекс карт 2.1. желательно подключать только на странице Контакты -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <!-- ###это инициализация апи яндекс карт 2.1. желательно подключать только на странице Контакты -->
+
+
+            <div id="map" style="width: 100%; height: 600px"></div>
+            <script type="text/javascript">
+            ymaps.ready(init);
+            var myMap,
+                myPlacemark;
+
+            function init() {
+
+                myMap = new ymaps.Map("map", {
+                    center: [44.57977893, 33.50987472], //центр
+                    // Хотим точнее и лучше ловите
+                    //http://dimik.github.io/ymaps/examples/location-tool/ 
+                    zoom: 18
+                });
+
+                myPlacemark = new ymaps.Placemark([44.57950582, 33.51194564], //коорданаты метки
+                {
+                    hintContent: 'Мы тут!',
+                    balloonContent: 'Вход через серые ворота, звоните перед приездом'
+                }, {
+
+                    iconLayout: 'default#image',
+                    iconImageHref: 'images/logo.png',
+                    iconImageSize: [40, 40],
+                    iconImageOffSet: [0, 0]
+
+                });
+                // Если захотим скролить по мапе удаляем ниже строчку
+                myMap.behaviors.disable('scrollZoom');
+                // 
+                myMap.geoObjects.add(myPlacemark);
+            }
+            </script>
+        </div>
+        <div class="block_d">
+            <div class="fix_p">
+                <img src="images/dyadya.png">
+                <h1>КАЖДЫЙ ДЕНЬ НА СВЯЗИ И ГОТОВ ПОМОЧЬ!</h1>
+                <div class="block_adress_tel">
+                    <div class="block_i">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span class="logotype">РСМ</span>
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
+                    </div>
+                    <div class="block_con">
+                        <p>Работаем без выходных!
+                            <br>С 8.00 до 21.00</p>
+                        <p>Ул. Шабалина 3, вход через серые ворота,
+                            <br> звоните перед приездом.</p>
+                        <p>+7 (978) 700 03 67
+                            <br> master@remont-stiralnyx-mashin.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'layouts/footer-block.html' %} {% endblock %}

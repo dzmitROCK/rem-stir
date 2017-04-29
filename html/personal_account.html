@@ -1,0 +1,241 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/personal_account_layout.html' %} {% block title %}{{ title_personal_account }}{% endblock %} {% block content %}
+<div class="container content_personal_account">
+    <div class="row">
+        <div class="col-md-4 col-lg-4 every_day">
+            <div class="block_every_day">
+                <div class="title_i clearfix">
+                    <h3>Зарабатывайте каждый день</h3>
+                    <a class="active" href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+                </div>
+                <div class="block_jobs">
+                    <!-- 1 -->
+                    <div class="job">
+                        <div class="fix_block">
+                            <div class="flex_fix">
+                                <div class="bdrs">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="text_job">
+                                <p>Подпишитесь в Браузере на уведомления об обмене рублей на уникальные товары! Не упустите возможность, <a href="#">Подписаться <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </p>
+                            </div>
+                            <a href="#"><i class="fa fa-close" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <!-- ###1 -->
+                    <!-- 2 -->
+                    <div class="job">
+                        <div class="fix_block">
+                            <div class="flex_fix">
+                                <div class="bdrs">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="text_job">
+                                <p>Расскажите о нашем сайте в социальной сети Вконтакте, чтобы не потерять ссылку и быть всегда вкурсе, <a class="vk_btn_open" href="#">Рассказать друзьям <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </p>
+                            </div>
+                            <a href="#"><i class="fa fa-close" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="vk_comments closed_block">
+                            <ol>
+                                <li>
+                                    <p class="bold">
+                                        Скопируйте данный текст в форму ввода комментария:
+                                    </p>
+                                    <p>
+                                        Я получу холодильник даром в течении нескольких дней!
+                                    </p>
+                                    <p>Тут нет выигравших или проигравших, вот ссылка: </p>
+                                    <p>
+                                        <a target="_blank" href="www.remont-holodilnikov-garant.ru/registration">www.remont-holodilnikov-garant.ru/registration</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="bold">
+                                        Поставьте галочку, возле кнопки отправить:
+                                    </p>
+                                </li>
+                            </ol>
+                            <div class="vk_image">
+                                <img src="images/vk.png" alt="" class="img-responsive">
+                            </div>
+                            <div class="vk_widget">
+                                Здесь будет виджет VK комментарии. Не могу вставить потому как работают только на сервере. На локальном сервере не работает.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ###2 -->
+                    <!-- 3 -->
+                    <div class="job">
+                        <div class="fix_block">
+                            <div class="flex_fix">
+                                <div class="bdrs">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="text_job">
+                                <p>Оставьте Ваш email для уникальных предложений, которые будут доступны только Вам, <a class="open_mail" href="#">Оставить email <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </p>
+                            </div>
+                            <a href="#"><i class="fa fa-close" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="mail_block">
+                            <form action="" id="form_mail" class="form_mail">
+                                <input class="fix_before" placeholder="Введите Ваш основной email" type="email" name="mail">
+                                <button form="form_mail" type="button" class="btn_mail"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ###3 -->
+                    <!-- 4 -->
+                    <div class="job overview_block">
+                        <div class="fix_block">
+                            <div class="flex_fix">
+                                <div class="bdrs">
+                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="text_job">
+                                <p>Представьте, что Вы владеете данной стиральной машиной , опишите все её плюсы и минусы, <a href="#">Перейти к написанию <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </p>
+                            </div>
+                            <a href="#"><i class="fa fa-close" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="overview">
+                            Комментариев за сегодня: <span>0/2</span>
+                        </div>
+                    </div>
+                    <!-- ###4 -->
+                    <!-- 5 -->
+                    <div class="job opinion_block">
+                        <div class="fix_block">
+                            <div class="flex_fix">
+                                <div class="bdrs">
+                                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="text_job">
+                                <p>Представьте, что Вы отремонтировали стиральную машину в нашем сервисе и Вам всё понравилось, напишите красивый или нейтральный отзыв, <a href="#">Перейти к написанию отзыва <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </p>
+                            </div>
+                            <a href="#"><i class="fa fa-close" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="opinion">
+                            Комментариев за сегодня: <span>0/2</span>
+                        </div>
+                    </div>
+                    <!-- ###5 -->
+                    <!-- 6 -->
+                    <div class="job">
+                        <div class="fix_block">
+                            <div class="flex_fix">
+                                <div class="bdrs">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="text_job">
+                                <p>За каждый час проведённый на данной странице, Вы получаете 5 рублей. Время: <span class="timer">00:00:05</span>
+                                </p>
+                            </div>
+                            <a href="#"><i class="fa fa-close" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <!-- ###6 -->
+                    <!-- 7 -->
+                    <div class="job">
+                        <div class="fix_block">
+                            <div class="flex_fix">
+                                <div class="bdrs">
+                                    <i class="fa fa-ruble" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="text_job">
+                                <p>Дополнительные средства всегда можно получить, каждые 4 часа! Нажмите на кнопку, когда она появится.
+                                </p>
+                            </div>
+                            <a href="#"><i class="fa fa-close" aria-hidden="true"></i></a>
+                        </div>
+                        <a href="#" class="btn_free_rub">Получить рубли</a>
+                    </div>
+                    <!-- ###7 -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 passive_income">
+            <div class="passive_income_block">
+                <div class="title_i clearfix">
+                    <h3>Пассивный доход</h3>
+                    <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
+                </div>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4 exchange">
+            <div class="exchange_block">
+                <div class="title_i clearfix">
+                    <h3>Обменяйте заработанное</h3>
+                    <a href="#"><i class="fa fa-refresh" aria-hidden="true"></i></a>
+                </div>
+                <div class="fade_me products_col">
+                    <div class="block_product" style="background-image: url(../images/machine_wash_bg.jpg);">
+                        <div class="brd_fix">
+                            <div class="flex_container">
+                                <div class="title">
+                                    <h4>СТИРАЛЬНАЯ МАШИНА INDESIT</h4>
+                                </div>
+                                <div class="description">
+                                    2008 год, 5 кг, хорошее состояние, в наличии, гарантия 6 месяцев, доставка бесплатно.
+                                </div>
+                                <div class="price_btn">
+                                    <div class="price_block">
+                                        <div class="text_price">
+                                            Цена на нашем сайте:
+                                        </div>
+                                        <div class="price">
+                                            <span>8500</span> <i class="fa fa-ruble" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#">Получить даром</a>
+                                </div>
+                                <div class="view_in_site_btn">
+                                    <a href="#">просмотреть на сайте <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade_me products_col">
+                    <div class="block_product" style="background-image: url(../images/machine_wash_bg.jpg);">
+                        <div class="brd_fix">
+                            <div class="flex_container">
+                                <div class="title">
+                                    <h4>СТИРАЛЬНАЯ МАШИНА INDESIT</h4>
+                                </div>
+                                <div class="description">
+                                    2008 год, 5 кг, хорошее состояние, в наличии, гарантия 6 месяцев, доставка бесплатно.
+                                </div>
+                                <div class="price_btn">
+                                    <div class="price_block">
+                                        <div class="text_price">
+                                            Цена на нашем сайте:
+                                        </div>
+                                        <div class="price">
+                                            <span>8500</span> <i class="fa fa-ruble" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <a href="#">Получить даром</a>
+                                </div>
+                                <div class="view_in_site_btn">
+                                    <a href="#">просмотреть на сайте <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

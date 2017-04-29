@@ -1,0 +1,294 @@
+{# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #} {% extends 'layouts/application.html' %} {% block title %}{{ title_login }}{% endblock %} {% block content %}
+<section class="login_page fade_me">
+    <div class="top_login container">
+        <div class="full_block">
+            <div class="title">
+                <h1>Вы готовы получить б/у стиральную машину даром?</h1>
+                <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Хорошее состояние</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Гарантия 6 месяцев </li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Доставка бесплатно</li>
+                </ul>
+            </div>
+            <div class="action">
+                <div class="flex_container">
+                    <div class="block_action bounce_me">
+                        <i class="fa fa-list-ol" aria-hidden="true"></i>
+                        <p>Выполните несколько
+                            <br> простых заданий</p>
+                    </div>
+                    <div class="block_action bounce_me">
+                        <i class="fa fa-ruble" aria-hidden="true"></i>
+                        <p>Зарабатывайте рубли
+                            <br> за каждое действие</p>
+                    </div>
+                    <div class="block_action bounce_me">
+                        <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                        <p>Обменяйте заработанное
+                            <br> на стиральную машину</p>
+                    </div>
+                </div>
+            </div>
+            <div class="login_block">
+                <div class="brd_rs">
+                    <div class="flex_container_login">
+                        <div class="login_btn">
+                            <a href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Войти</a>
+                        </div>
+                        <div class="registration_btn">
+                            <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> Регистрация</a>
+                        </div>
+                        <div class="text_soc">
+                            <p>Войдите с помощью:</p>
+                        </div>
+                        <div class="btn_soc">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="btn_d" class="btn_down">
+                <a href="#btn_d">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="block_two">
+    <div class="container">
+        <h1>Отдаём б/у стиральные машины - в хорошие руки!</h1>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 fade_me products_col">
+                <div class="block_product" style="background-image: url(../images/machine_wash_bg.jpg);">
+                    <div class="brd_fix">
+                        <div class="flex_container">
+                            <div class="title">
+                                <h4>СТИРАЛЬНАЯ МАШИНА INDESIT</h4>
+                            </div>
+                            <div class="description">
+                                2008 год, 5 кг, хорошее состояние, в наличии, гарантия 6 месяцев, доставка бесплатно.
+                            </div>
+                            <div class="price_btn">
+                                <div class="price_block">
+                                    <div class="text_price">
+                                        Цена на нашем сайте:
+                                    </div>
+                                    <div class="price">
+                                        <span>8500</span> <i class="fa fa-ruble" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Получить даром</a>
+                            </div>
+                            <div class="view_in_site_btn">
+                                <a href="#">просмотреть на сайте <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 fade_me products_col">
+                <div class="block_product" style="background-image: url(../images/machine_wash_bg.jpg);">
+                    <div class="brd_fix">
+                        <div class="flex_container">
+                            <div class="title">
+                                <h4>СТИРАЛЬНАЯ МАШИНА INDESIT</h4>
+                            </div>
+                            <div class="description">
+                                2008 год, 5 кг, хорошее состояние, в наличии, гарантия 6 месяцев, доставка бесплатно.
+                            </div>
+                            <div class="price_btn">
+                                <div class="price_block">
+                                    <div class="text_price">
+                                        Цена на нашем сайте:
+                                    </div>
+                                    <div class="price">
+                                        <span>8500</span> <i class="fa fa-ruble" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Получить даром</a>
+                            </div>
+                            <div class="view_in_site_btn">
+                                <a href="#">просмотреть на сайте <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 fade_me products_col">
+                <div class="block_product" style="background-image: url(../images/machine_wash_bg.jpg);">
+                    <div class="brd_fix">
+                        <div class="flex_container">
+                            <div class="title">
+                                <h4>СТИРАЛЬНАЯ МАШИНА INDESIT</h4>
+                            </div>
+                            <div class="description">
+                                2008 год, 5 кг, хорошее состояние, в наличии, гарантия 6 месяцев, доставка бесплатно.
+                            </div>
+                            <div class="price_btn">
+                                <div class="price_block">
+                                    <div class="text_price">
+                                        Цена на нашем сайте:
+                                    </div>
+                                    <div class="price">
+                                        <span>8500</span> <i class="fa fa-ruble" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Получить даром</a>
+                            </div>
+                            <div class="view_in_site_btn">
+                                <a href="#">просмотреть на сайте <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 fade_me products_col">
+                <div class="block_product" style="background-image: url(../images/machine_wash_bg.jpg);">
+                    <div class="brd_fix">
+                        <div class="flex_container">
+                            <div class="title">
+                                <h4>СТИРАЛЬНАЯ МАШИНА INDESIT</h4>
+                            </div>
+                            <div class="description">
+                                2008 год, 5 кг, хорошее состояние, в наличии, гарантия 6 месяцев, доставка бесплатно.
+                            </div>
+                            <div class="price_btn">
+                                <div class="price_block">
+                                    <div class="text_price">
+                                        Цена на нашем сайте:
+                                    </div>
+                                    <div class="price">
+                                        <span>8500</span> <i class="fa fa-ruble" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Получить даром</a>
+                            </div>
+                            <div class="view_in_site_btn">
+                                <a href="#">просмотреть на сайте <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 fade_me products_col">
+                <div class="block_product" style="background-image: url(../images/machine_wash_bg.jpg);">
+                    <div class="brd_fix">
+                        <div class="flex_container">
+                            <div class="title">
+                                <h4>СТИРАЛЬНАЯ МАШИНА INDESIT</h4>
+                            </div>
+                            <div class="description">
+                                2008 год, 5 кг, хорошее состояние, в наличии, гарантия 6 месяцев, доставка бесплатно.
+                            </div>
+                            <div class="price_btn">
+                                <div class="price_block">
+                                    <div class="text_price">
+                                        Цена на нашем сайте:
+                                    </div>
+                                    <div class="price">
+                                        <span>8500</span> <i class="fa fa-ruble" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Получить даром</a>
+                            </div>
+                            <div class="view_in_site_btn">
+                                <a href="#">просмотреть на сайте <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 fade_me products_col">
+                <div class="block_product" style="background-image: url(../images/machine_wash_bg.jpg);">
+                    <div class="brd_fix">
+                        <div class="flex_container">
+                            <div class="title">
+                                <h4>СТИРАЛЬНАЯ МАШИНА INDESIT</h4>
+                            </div>
+                            <div class="description">
+                                2008 год, 5 кг, хорошее состояние, в наличии, гарантия 6 месяцев, доставка бесплатно.
+                            </div>
+                            <div class="price_btn">
+                                <div class="price_block">
+                                    <div class="text_price">
+                                        Цена на нашем сайте:
+                                    </div>
+                                    <div class="price">
+                                        <span>8500</span> <i class="fa fa-ruble" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <a href="#">Получить даром</a>
+                            </div>
+                            <div class="view_in_site_btn">
+                                <a href="#">просмотреть на сайте <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="rating fade_me">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-5 col-lg-offset-1 left_rating">
+                <div class="rating_block">
+                    <h2>Рейтинг наших участников</h2>
+                    <ul>
+                        <li>
+                            <div class="number">1 </div>
+                            <div class="avatar">
+                                <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=ava">
+                            </div>
+                            <div class="name">Владимир Русланович</div>
+                            <div class="coins"><span>1250</span><i class="fa fa-ruble" aria-hidden="true"></i></div>
+                        </li>
+                        <li>
+                            <div class="number">2 </div>
+                            <div class="avatar">
+                                <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=ava">
+                            </div>
+                            <div class="name">Владимир Русланович</div>
+                            <div class="coins"><span>1250</span><i class="fa fa-ruble" aria-hidden="true"></i></div>
+                        </li>
+                        <li>
+                            <div class="number">3 </div>
+                            <div class="avatar">
+                                <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=ava">
+                            </div>
+                            <div class="name">Владимир Русланович</div>
+                            <div class="coins"><span>1250</span><i class="fa fa-ruble" aria-hidden="true"></i></div>
+                        </li>
+                        <li>
+                            <div class="number">4 </div>
+                            <div class="avatar">
+                                <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=ava">
+                            </div>
+                            <div class="name">Владимир Русланович</div>
+                            <div class="coins"><span>1250</span><i class="fa fa-ruble" aria-hidden="true"></i></div>
+                        </li>
+                        <li>
+                            <div class="number">5 </div>
+                            <div class="avatar">
+                                <img src="https://api.fnkr.net/testimg/100x100/00CED1/FFF/?text=ava">
+                            </div>
+                            <div class="name">Владимир Русланович</div>
+                            <div class="coins"><span>1250</span><i class="fa fa-ruble" aria-hidden="true"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+                <h2>Подпишитесь и будьте в курсе</h2>
+                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Дал реторический повстречался использовало необходимыми свою оксмокс бросил океана деревни не свой, безорфографичный своего но он живет, строчка, речью грамматики!</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'layouts/footer-block.html' %} {% endblock %}
