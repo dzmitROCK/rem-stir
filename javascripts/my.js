@@ -1,48 +1,37 @@
 $(document).ready(function() {
-    function timer() {
-        var getStringTimer = $('.timer').html();
-        var objTimer = getStringTimer.split(':');
-        var hourTimer = parseInt(objTimer[0]);
-        var minTimer = parseInt(objTimer[1]);
-        var secTimer = parseInt(objTimer[2]);
 
-        if (secTimer == 59) {
-            var secTimer = 0;
-
-            if (minTimer == 59) {
-                var minTimer = 0;
-                ++hourTimer;
-            } else {
-                ++minTimer;
-            }
-        } else {
-            ++secTimer;
-        }
-
-        if (secTimer < 10) {
-            var secTimer = "0" + secTimer;
-        }
-
-        if (minTimer < 10) {
-            var minTimer = "0" + minTimer;
-        }
-
-        if (hourTimer < 10) {
-            var hourTimer = "0" + hourTimer;
-        }
+    $('.history_btn').click(function(event) {
+        event.preventDefault();
+        // $('.bg_modal').fadeIn();
+        $('.wishes_modal').fadeOut(0, function() {
+            $('.rules_modal').fadeOut(0, function() {
+                $('.info_modal').fadeToggle('fast');
+            })
+        })
+    });
 
 
+    $('.rules_btn').click(function(event) {
+        event.preventDefault();
+        // $('.bg_modal').fadeIn();
+        $('.wishes_modal').fadeOut(0, function() {
+            $('.info_modal').fadeOut(0, function() {
+                $('.rules_modal').fadeToggle('fast');
+            })
+        })
+    });
 
-        $('.timer').text(hourTimer + ':' + minTimer + ':' + secTimer)
 
-        console.log(secTimer);
-    }
-    
-    setInterval(timer, 1000);
+    $('.wishes_btn').click(function(event) {
+        event.preventDefault();
+        // $('.bg_modal').fadeIn();
+        $('.rules_modal').fadeOut(0, function() {
+            $('.info_modal').fadeOut(0, function() {
+                $('.wishes_modal').fadeToggle('fast');
+            })
+        })
 
-
-
-
+    });
 
     $('.vk_btn_open').click(function(event) {
         event.preventDefault();
