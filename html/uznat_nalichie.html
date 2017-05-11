@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-lg-8 close_me_content">
-                <!-- dobavit tehniku -->
+                <!--uznat nalichie -->
                 <section class="dobav_tehniku">
                     <div class="first_form_block">
                         <div class="row">
@@ -18,36 +18,49 @@
                             </div>
                         </div>
                     </div>
-                    <form action="" method="">
-                        <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control" placeholder="Стиральная машина Б/У ARDO 2005 год, Севастополь, идеальное состояние" aria-describedby="basic-addon2">
+                    <form class="material_form" action="" method="">
+                        <div class="row m_bottom">
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <fieldset class="material">
+                                    <input type="text" placeholder="Стиральная машина Б/У ARDO 2005 год, Севастополь, идеальное состояние" required>
+                                    <hr>
+                                    <label>Заполните это поле</label>
+                                </fieldset>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <fieldset class="material">
+                                    <input type="text" placeholder="Виктория" required>
+                                    <hr>
+                                    <label>Имя</label>
+                                </fieldset>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <fieldset class="material">
+                                    <input type="text" placeholder="myemail@email.com" required>
+                                    <hr>
+                                    <label>Почта</label>
+                                </fieldset>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <fieldset class="material">
+                                    <input type="text" placeholder="Задайте Ваш вопрос максимально подробно" required>
+                                    <hr>
+                                    <label>Задайте Ваш вопрос максимально подробно</label>
+                                </fieldset>
+                            </div>
                         </div>
-                        <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control" placeholder="Имя" aria-describedby="basic-addon1">
-                        </div>
-                       
-                        <div class="input-group">
-                            <span class="input-group-addon" id="basic-addon4"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                            <input type="text" class="form-control" placeholder="E-mail" aria-describedby="basic-addon4">
-                        </div>
-                        <div class="form-group">
-                            <label data-symbols="50" class="placeholder">Осталось: <span>50</span> символов</label>
-                            <textarea name="text" class="feedback-input form-control" id="comment" placeholder="Здравствуйте! Задайте все интересующие Вас вопросы на счёт данного товара , его приобретения, доставки и состояния..."></textarea>
-                        </div>
-                        <div class="row m_bottom clearfix">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="row clearfix capcha_btn">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 capcha_btn">
                                 <div class="capcha">
-                                    опять же от плагина
+                                    капча
                                 </div>
-                                <button type="button" disabled="disabled" class="btn btn_blue">ОТПРАВИТЬ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                                <button type="button" class="btn butn_brd_orange ">ОТПРАВИТЬ <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                             </div>
                         </div>
                     </form>
-                   
                 </section>
-                <!-- ###dobavit tehniku -->
+                <!-- ##uznat nalichie -->
+                {% include 'layouts/action_block.html' %}
             </div>
             <div class="col-md-4 col-lg-4 close_me">
                 {% include 'layouts/sidebar.html' %}

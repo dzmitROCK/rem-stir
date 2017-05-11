@@ -2,7 +2,6 @@ $(document).ready(function() {
 
     $('.history_btn').click(function(event) {
         event.preventDefault();
-        // $('.bg_modal').fadeIn();
         $('.wishes_modal').fadeOut(0, function() {
             $('.rules_modal').fadeOut(0, function() {
                 $('.info_modal').fadeToggle('fast');
@@ -13,7 +12,6 @@ $(document).ready(function() {
 
     $('.rules_btn').click(function(event) {
         event.preventDefault();
-        // $('.bg_modal').fadeIn();
         $('.wishes_modal').fadeOut(0, function() {
             $('.info_modal').fadeOut(0, function() {
                 $('.rules_modal').fadeToggle('fast');
@@ -24,7 +22,6 @@ $(document).ready(function() {
 
     $('.wishes_btn').click(function(event) {
         event.preventDefault();
-        // $('.bg_modal').fadeIn();
         $('.rules_modal').fadeOut(0, function() {
             $('.info_modal').fadeOut(0, function() {
                 $('.wishes_modal').fadeToggle('fast');
@@ -195,7 +192,28 @@ jQuery(document).ready(function($) {
         $(this).attr('data-block', index);
 
     });
+    // text
+    $('.open_text').each(function(index) {
 
+        $(this).attr('data-opnbtn', index);
+
+    });
+    $('.hiden_block').each(function(index) {
+
+        $(this).attr('data-hidenblock', index);
+
+    });
+    $('.on_dis').each(function(index) {
+
+        $(this).attr('data-ondis', index);
+
+    });
+    $('.off_dis').each(function(index) {
+
+        $(this).attr('data-offdis', index);
+
+    });
+    // text
     $('.close_btn a').each(function(index) {
 
         $(this).attr('data-close', index);
@@ -206,6 +224,16 @@ jQuery(document).ready(function($) {
         $(this).attr('data-icon', index);
 
     });
+
+    $('.open_text').click(function(event) {
+        event.preventDefault();
+        var item = $(this).data().opnbtn;
+        $('body').find('[data-hidenblock="' + item + '"]').fadeToggle('fast');
+        $('body').find('[data-offdis="' + item + '"]').fadeToggle(0);
+        $('body').find('[data-ondis="' + item + '"]').fadeToggle(0);
+
+    });
+
 
     $('.icon_aside').click(function(event) {
         event.preventDefault();

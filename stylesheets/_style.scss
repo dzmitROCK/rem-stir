@@ -25,7 +25,7 @@ a {
     .material {
         position: relative;
         padding: 0;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         border: none;
         overflow: visible;
         input {
@@ -41,6 +41,7 @@ a {
             cursor: text;
             &::-webkit-input-placeholder {
                 transition: color 300ms ease;
+                color: #000;
             }
             &:not(:focus)::-webkit-input-placeholder {
                 color: transparent;
@@ -74,7 +75,7 @@ a {
             top: 10px;
             left: 10px;
             font-size: 120%;
-            color: #000;
+            color: rgba(#000, 0.75);
             transform-origin: 0 -150%;
             transition: transform 300ms ease;
             pointer-events: none;
@@ -85,13 +86,16 @@ a {
         }
     }
 }
+
 .capcha_btn {
     display: inline-flex;
 }
+
 .capcha {
     margin-right: 20px;
     margin-bottom: 10px;
 }
+
 .text_p {
     color: #000000;
     font-size: 13px;
@@ -332,14 +336,14 @@ a {
                 font-size: 11px;
                 color: white;
                 padding: 5px 20px 5px;
-                border: 2px solid $actcol;
+                border: 1px solid $actcol;
                 border-radius: $brd;
                 margin-bottom: 10px;
                 transition: ease .3s;
                 font-weight: bold;
                 background: {
                     image: linear-gradient(45deg, $actcol 50%, transparent 50%);
-                    position: 100%;
+                    position: 99%;
                     size: 400%;
                 }
                 transition: 300ms ease-in-out;
@@ -666,7 +670,7 @@ a {
     display: inline-block;
     font-size: 15px;
     border-radius: $brd;
-    border: 2px solid $actcol;
+    border: 1px solid $actcol;
     padding: 5px 20px 5px;
     color: #000;
     background: {
@@ -683,82 +687,6 @@ a {
 
 .bold {
     font-weight: bold;
-}
-
-.close_block {
-    margin-bottom: 10px;
-    background-color: $lightcol;
-    border-radius: $brd;
-    padding: 7px;
-    position: relative;
-    text-align: center;
-    &.three {
-        // background-image: url(../images/bg_mashine.jpg);
-        background-size: cover;
-    }
-    &.four {
-        // background-image: url(../images/bg_chel.jpg);
-        background-size: cover;
-    }
-    .phone {
-        text-align: center;
-        a {
-            color: #000000;
-            font-weight: bold;
-            font-size: 25px;
-        }
-        i {
-            font-size: 30px;
-        }
-        span {
-            font-size: 15px;
-        }
-    }
-    .butn_brd_orange {
-        font-size: 11px;
-    }
-    .btn_ful_or {
-        font-size: 11px;
-        padding: 5px 20px;
-        border-bottom: 3px solid darken($actcol, 10%);
-        transition: none;
-        &:hover {
-            border-bottom: none;
-            margin-top: 3px;
-        }
-    }
-    .text {
-        color: #000000;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 14px;
-    }
-    .orange_brd {
-        border: 3px dotted $actcol;
-        padding: 10px 0;
-    }
-    .white_brd {
-        border: 3px dotted #ffffff;
-        padding: 10px 0;
-    }
-    p {
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 14px;
-    }
-    .close_btn {
-        text-align: right;
-        a {
-            img {
-                position: absolute;
-                right: -17px;
-                top: 0;
-            }
-        }
-    }
-    .block_sam {
-        text-align: center;
-    }
 }
 
 .btn_ful_or {
@@ -820,12 +748,6 @@ a {
     }
 }
 
-aside {
-    .closed_closed {
-        display: none;
-    }
-}
-
 .icons_aside {
     position: fixed;
     bottom: 20px;
@@ -850,7 +772,7 @@ aside {
 .allertino {
     padding: 20px;
     border-radius: $brd;
-    border: 2px solid $actcol;
+    border: 1px solid $actcol;
     margin-top: 25px;
     .img {
         margin: 1px 0;
@@ -922,7 +844,7 @@ aside {
 section {
     .last {
         border-radius: $brd;
-        border: 2px solid $actcol;
+        border: 1px solid $actcol;
         padding: 10px;
     }
 }
@@ -1001,7 +923,7 @@ section {
         display: inline-block;
         margin-top: 3px;
         border-radius: $brd;
-        border: 2px solid $actcol;
+        border: 1px solid $actcol;
         color: #000000;
         font-size: 13px;
         font-weight: 400;
@@ -1313,7 +1235,7 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
     display: inline-block;
     margin-top: 3px;
     border-radius: $brd;
-    border: 2px solid $actcol;
+    border: 1px solid $actcol;
     color: #000000;
     font-size: 13px;
     font-weight: 400;
@@ -1380,7 +1302,6 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
     padding-bottom: 20px;
     h1 {
         font-size: 25px;
-        text-transform: uppercase;
         color: #000;
         margin-bottom: 0;
     }
@@ -1561,7 +1482,7 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
         min-height: 150px;
         resize: vertical;
         position: relative;
-        border: 1px solid $actcol;
+        border: 1px solid #ddd;
         padding: 10px;
         border-radius: $brd;
         &:focus {
@@ -1594,7 +1515,7 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
 
 .dopolnitelno {
     margin-bottom: 50px;
-    max-width: 350px;
+    max-width: 380px;
     .first {
         font-size: 13px;
         line-height: 15px;
@@ -1607,6 +1528,13 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
             color: $primecol;
             text-decoration: underline;
         }
+    }
+}
+
+button.butn_brd_orange {
+    background-color: transparent;
+    &:active {
+        color: #000;
     }
 }
 
@@ -1890,7 +1818,6 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
     h2 {
         float: left;
         font-size: 25px;
-        font-weight: bold;
         color: #000000;
         margin-top: 0;
     }
@@ -1901,6 +1828,7 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
         padding: 5px 30px;
         margin-bottom: 10px;
         margin-top: 0;
+        margin-right: 0;
     }
 }
 
@@ -2188,7 +2116,6 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
 .malfunction_article {
     h2 {
         font-size: 20px;
-        font-weight: bold;
         line-height: 20px;
         text-transform: uppercase;
         color: #000000;
@@ -2314,7 +2241,7 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
             }
         }
         .btn_white {
-            border: 2px solid #fff;
+            border: 1px solid #fff;
             background: #fff;
             &:hover {
                 color: $actcol;
@@ -2339,18 +2266,6 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
         width: 100%;
         position: relative;
         .block_d {
-            position: relative;
-            &:before {
-                content: '';
-                position: absolute;
-                bottom: -20px;
-                right: 0;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0 20px 20px 0;
-                border-color: transparent $actcol transparent transparent;
-            }
             h1 {
                 color: #ffffff;
                 font-size: 20px;
@@ -2358,7 +2273,7 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
                 margin-top: 0;
                 margin-left: 50px;
             }
-            border-radius: 5px 5px 0 5px;
+            border-radius: $brd;
             width: 550px;
             z-index: 999;
             position: absolute;
@@ -2626,15 +2541,20 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
 }
 
 .fix_btn {
+    .btn_white {
+        margin-top: 0;
+    }
     .btn_block {
         display: flex;
         justify-content: center;
         .btn_ful_or {
-            height: 29px;
-            transform: translateY(2px);
+            height: 26px;
             &:hover {
-                height: 26px;
-                transform: translateY(5px);
+                line-height: 11.5px;
+                height: 23px;
+                border-bottom: 0;
+                transform: rotateY(3px);
+                margin-bottom: 0;
             }
         }
     }
@@ -3189,6 +3109,7 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
     }
     a {
         float: right;
+        margin-right: 10px;
         opacity: 0.20;
         color: #000;
         font-size: 20px;
@@ -3534,6 +3455,242 @@ $linear: linear-gradient(rgba($actcol, 0.8), rgba($actcol, 0.8));
         line-height: 15px;
         span {
             font-weight: bold;
+        }
+    }
+}
+
+.hiden_block {
+    display: none;
+}
+
+.open_text {
+    display: block;
+    margin-top: -16px;
+    opacity: 0.5;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+    &:hover {
+        color: #000;
+        opacity: 0.8;
+    }
+}
+
+.off_dis {
+    display: none;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+.action_block {
+    text-align: center;
+    background-color: $lightcol;
+    border-radius: $brd;
+    padding: 5px;
+    .brd_block {
+        padding: 10px;
+        border-radius: $brd;
+        border: 1px solid rgba(#000, 0.25);
+        h3 {
+            color: #000000;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .icon {
+            margin-top: 40px;
+            margin-bottom: 25px;
+            i {
+                font-size: 45px;
+                font-weight: 400;
+                line-height: 14px;
+                color: $actcol;
+                text-shadow: 4px 3px 0 $lightcol, 10px 6px 0 rgba(0, 0, 0, 0.25);
+            }
+        }
+        .text_block {
+            color: #000000;
+            font-size: 13px;
+            font-weight: 400;
+            p {
+                margin-bottom: 15px;
+            }
+        }
+        a {
+            display: inline-block;
+            color: #000000;
+            font-size: 13px;
+            font-weight: 400;
+            text-decoration: underline;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.aside_block {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(#000, 0.1);
+    border-radius: $brd;
+    padding: 20px 0;
+    margin-bottom: 5px;
+    
+    &:hover {
+        &.one:before,&.two:before,&.three:before,&.four:before {
+            transform:scale(2);
+        }
+    }
+    &.one {
+        &:before {
+            position: absolute;
+            font-family: 'FontAwesome';
+            top: -20%;
+            left: -10%;
+            content: "\f29c";
+            color: rgba(#000, 0.1);
+            font-size: 180px;
+            line-height: 1;
+            z-index: -1;
+            transition:ease 0.3s;
+        }
+    }
+    &.two {
+        &:before {
+            position: absolute;
+            font-family: 'FontAwesome';
+            top: -10%;
+            left: -23%;
+            content: "\f291";
+            color: rgba(#000, 0.1);
+            font-size: 180px;
+            line-height: 1;
+            z-index: -1;
+            transition:ease 0.3s;
+        }
+    }
+    &.three {
+        &:before {
+            position: absolute;
+            font-family: 'FontAwesome';
+            top: -30%;
+            left: -15%;
+            content: "\f16a";
+            color: rgba(#000, 0.1);
+            font-size: 180px;
+            line-height: 1;
+            z-index: -1;
+            transition:ease 0.3s;
+        }
+    }
+    &.four {
+        &:before {
+            position: absolute;
+            font-family: 'FontAwesome';
+            top: -20%;
+            left: -10%;
+            content: "\f06b";
+            color: rgba(#000, 0.1);
+            font-size: 180px;
+            line-height: 1;
+            z-index: -1;
+            transition:ease 0.3s;
+        }
+    }
+    .title_aside {
+        color: #000000;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 14px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .description {
+        color: #000000;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+    .btn_white {
+        color: #000000;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 6px;
+        width: 175px;
+    }
+}
+
+.passive_income {
+    .pers_block {
+        margin-bottom: 20px;
+        .pers_info {
+            border: 1px solid #c9c9c9;
+            border-radius: 5px;
+            padding: 20px 15px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 15px;
+            color: #000000;
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: -8px;
+                right: 8px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 8px 8px 8px;
+                border-color: transparent transparent #c9c9c9 transparent;
+            }
+            a {
+                text-decoration: underline;
+                color: #144bff;
+            }
+        }
+    }
+}
+
+.search_click_block {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    .search_block {
+        a {
+            color: #bababa;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 15px;
+            &:hover {
+                color: #555;
+            }
+        }
+    }
+}
+
+#myModal {
+    .header_modal {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #008dd2;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+        i {
+            color: #fff;
+        }
+        p {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    .form_modal {
+        padding: 20px;
+        .material_form {
+            margin-bottom: 20px;
         }
     }
 }
