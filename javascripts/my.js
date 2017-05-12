@@ -40,10 +40,17 @@ $(document).ready(function() {
     $('.vk_btn_open').click(function(event) {
         event.preventDefault();
         $('.vk_comments').fadeToggle('fast');
+        $('.vkontakte_job').toggleClass('active');
+        $('.vkontakte_job .fa-long-arrow-right').fadeToggle(0);
+        $('.vkontakte_job .fa-long-arrow-down').fadeToggle(0);
     });
+
     $('.open_mail').click(function(event) {
         event.preventDefault();
         $('.mail_block').fadeToggle('fast');
+        $('.mail_job').toggleClass('active');
+        $('.mail_job .fa-long-arrow-right').fadeToggle(0);
+        $('.mail_job .fa-long-arrow-down').fadeToggle(0);
     });
 
 

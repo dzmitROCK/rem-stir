@@ -1087,7 +1087,7 @@ footer {
             display: inline-block;
             margin-bottom: 10px;
             opacity: 0.5;
-            transition:ease 0.3s;
+            transition: ease 0.3s;
             &:hover {
                 opacity: 1;
             }
@@ -3009,7 +3009,8 @@ button.butn_brd_orange {
 
 @keyframes loader {
     0% {
-        transform: rotateY(0deg) scale3d(1, 1, 1);;
+        transform: rotateY(0deg) scale3d(1, 1, 1);
+        ;
         transform-style: preserve-3d;
     }
     50% {
@@ -3170,6 +3171,9 @@ button.butn_brd_orange {
             &:hover {
                 background-color: #eee;
             }
+            &.active {
+                background-color: #eee;
+            }
             .fa-close {
                 position: absolute;
                 left: -15px;
@@ -3259,7 +3263,8 @@ button.butn_brd_orange {
     .material_form .material {
         margin-bottom: 0;
     }
-    .material_form .material input,.material_form .material label {
+    .material_form .material input,
+    .material_form .material label {
         font-size: 100%;
     }
     // form {
@@ -3981,4 +3986,10 @@ button.butn_brd_orange {
     bottom: 14px;
     left: 0;
     color: red;
+}
+
+.vkontakte_job,.mail_job {
+    .fa-long-arrow-down {
+        display: none;
+    }
 }
