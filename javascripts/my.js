@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    $('.info_icon,.close_btn').click(function(event) {
+        event.preventDefault();
+        $('.pers_block').toggle("fast");
+    });
+
+
+
     $('.history_btn').click(function(event) {
         event.preventDefault();
         $('.wishes_modal').fadeOut(0, function() {
@@ -164,26 +171,7 @@ jQuery(document).ready(function($) {
                 });
             }
 
-            $(window).scroll(function() {
 
-                var sb_m = 0; /* отступ сверху и снизу */
-                var mb = 800; /* высота подвала с запасом */
-                var st = $(window).scrollTop() + 110;
-                var sb = $("aside");
-                var sbi = $("aside .fixed_block");
-                var sb_ot = sb.offset().top;
-                var sbi_ot = sbi.offset().top;
-                var sb_h = sb.height();
-
-                if (sb_h + $(document).scrollTop() + sb_m + mb < $(document).height()) {
-                    if (st > sb_ot) {
-                        var h = Math.round(st - sb_ot) + sb_m;
-                        sb.css({ "paddingTop": h });
-                    } else {
-                        sb.css({ "paddingTop": 0 });
-                    }
-                }
-            });
         }
     });
 
@@ -225,6 +213,30 @@ jQuery(document).ready(function($) {
 
     });
 
+    $('.job').each(function(index) {
+
+        $(this).find('.close_btn_job').attr('data-btnclose', index);
+
+    });
+
+    $('.job').each(function(index) {
+
+        $(this).attr('data-blockjob', index);
+
+    });
+
+    $('.job .close_btn_job').click(function(event) {
+        event.preventDefault();
+        $('.star').addClass('active');
+        var item = $(this).data().btnclose;
+        $('body').find('[data-blockjob="' + item + '"]').fadeToggle('fast');
+    });
+
+    $('.star').click(function(event) {
+        event.preventDefault();
+        $(this).removeClass('active');
+        $('.job').fadeIn('fast');
+    });
     $('.open_text').click(function(event) {
         event.preventDefault();
         var item = $(this).data().opnbtn;
@@ -290,4 +302,29 @@ $(document).ready(function() {
         classToAdd: 'visible_me animated bounceInUp',
         offset: 150
     });
+
+
+    $(window).scroll(function() {
+
+        var sb_m = 0; /* отступ сверху и снизу */
+        var mb = 800; /* высота подвала с запасом */
+        var st = $(window).scrollTop() + 110;
+        var sb = $("aside");
+        var sbi = $("aside .fixed_block");
+        var sb_ot = sb.offset().top;
+        var sbi_ot = sbi.offset().top;
+        var sb_h = sb.height();
+
+        if (sb_h + $(document).scrollTop() + sb_m + mb < $(document).height()) {
+            if (st > sb_ot) {
+                var h = Math.round(st - sb_ot) + sb_m;
+                sb.css({ "paddingTop": h });
+            } else {
+                sb.css({ "paddingTop": 0 });
+            }
+        }
+    });
+
+
+
 });

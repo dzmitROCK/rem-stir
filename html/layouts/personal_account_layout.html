@@ -21,16 +21,20 @@
     </div>
     <!-- ###content -->
     <!-- footer -->
-    {% include 'layouts/footer.html' %}
+    {% include 'layouts/personal_account_footer.html' %}
     <!-- ###footer -->
+
     {% block javascript %}
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script defer src="javascripts/app.js"></script>
+    <script src="javascripts/app.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-        function timer() {
 
+       
+
+        // timer
+        function timer() {
             var getStringTimer = $('.timer').html();
             var objTimer = getStringTimer.split(':');
             var hourTimer = parseInt(objTimer[0]);
@@ -60,10 +64,13 @@
             $('.timer').text(hourTimer + ':' + minTimer + ':' + secTimer)
         }
         setInterval(timer, 1000);
+        // ###timer
     });
     </script>
     {% endblock %}
-{% include 'layouts/mymenu.html' %}
+    <!--  -->
+    {% include 'layouts/mymenu.html' %}
+    
 </body>
 
 </html>
