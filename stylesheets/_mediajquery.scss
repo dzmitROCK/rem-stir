@@ -142,6 +142,11 @@
 }
 
 @media (max-width: $screen-sm-min) {
+    .table-responsive.index {
+    td {
+        width: auto;
+    }
+}
     .head_mod_dnon {
         display: none;
     }
