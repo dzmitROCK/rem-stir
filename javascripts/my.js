@@ -104,9 +104,7 @@ jQuery(document).ready(function($) {
         });
     });
 
-    // // всплывашка
-    $('.warn').tooltip();
-    // всплывашка
+
     // подсчёт в форме символов
     $('.feedback-input').on('input', function() {
 
@@ -121,6 +119,24 @@ jQuery(document).ready(function($) {
             $(this).siblings().css("opacity", "0.7");
             $('button[type="button"]').attr('disabled', 'disabled');
         }
+    });
+    $('.no_space').on('input', function() {
+        var limit = $('.textarea_rep .two span');
+        var money = $('.textarea_rep .one span')
+        var total = $(this).val().length;
+        var result = 1500 - total;
+        var kopejki = (total * 0.01).toFixed(2);
+        if (result >= 0) {
+            limit.text(result);
+            money.text(kopejki);
+        } else {
+            limit.text('1500');
+            money.text('15');
+        }
+
+
+        console.log(kopejki);
+
     });
     // подсчёт в форме символов
     // scrol
